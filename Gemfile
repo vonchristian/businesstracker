@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem "animate-rails"
 gem 'devise'
 gem 'simple_form'
+gem "font-awesome-rails"
 group :development, :test do
   gem 'byebug', platform: :mri
   gem "rspec-rails", "3.5.0.beta1"
