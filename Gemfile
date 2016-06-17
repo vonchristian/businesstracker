@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'redis', '~> 3.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "animate-rails"
+gem 'devise'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem "rspec-rails", "3.5.0.beta1"
