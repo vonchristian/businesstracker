@@ -1,0 +1,14 @@
+<%=simple_form_for @account do |f| %>
+  <%=f.error_notification %>
+  <%=f.input :municipality_or_city %>
+  <%=f.simple_fields_for :owner do |o| %>
+  <%=o.input :first_name %>
+  <%=o.input :middle_name %>
+  <%=o.input :last_name %>
+  <%=o.input :email %>
+  <%=o.input :password %>
+  <%=o.input :password_confirmation%>
+
+  <% end %>
+  <%=f.submit %>
+<% end %>

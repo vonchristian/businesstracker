@@ -254,7 +254,7 @@
 						<li><a href="tour.html">Tour</a></li>
 						<li><a href="pricing.html">Pricing</a></li>
 					</ul>
-					<h1 id="fh5co-logo"><a href="index.html">BusinessTracker</a></h1>
+					<h1 id="fh5co-logo"><a href="/home">Business Tracker</a></h1>
 					<ul class="pull-right right-menu">
 						<li><a href="/login">Login</a></li>
 						<li class="fh5co-cta-btn"><a href="/users/new">Sign up</a></li>
@@ -264,7 +264,7 @@
 		</section>
 		<!-- #fh5co-header -->
 
-		<section id="fh5co-hero" class="js-fullheight" style="background-image: url(images/hero_bg.jpg);" data-next="yes">
+		<section id="fh5co-hero" class="js-fullheight" style="background-image: url(hero_bg.jpg);" data-next="yes">
 			<div class="fh5co-overlay"></div>
 			<div class="container">
 				<div class="fh5co-intro js-fullheight">
@@ -276,16 +276,16 @@
 							<div class="fh5co-right-position">
 						-->
 						<div class="fh5co-left-position">
-							<h2 class="animate-box">Create Awesome Things for Better Web</h2>
-							<p class="animate-box"><a href="https://vimeo.com/channels/staffpicks/93951774" class="btn btn-outline popup-vimeo btn-video"><i class="icon-play2"></i> Watch video</a> <a href="http://freehtml5.co" target="_blank" class="btn btn-primary">Visit FREEHTML5.co</a></p>
+							<h2 class="animate-box">Streamlining Business Registration for Better Service Delivery</h2>
+							<p class="animate-box"><a href="https://vimeo.com/channels/staffpicks/93951774" class="btn btn-outline popup-vimeo btn-video"><i class="fa fa-play"></i> Watch video</a> <a href="/accounts/new" class="btn btn-primary">Try it for Free</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="fh5co-learn-more animate-box">
 				<a href="#" class="scroll-btn">
-					<span class="text">Explore more about us</span>
-					<span class="arrow"><i class="icon-chevron-down"></i></span>
+					<span class="text">Learn more about Business Tracker</span>
+					<span class="arrow"><i class="fa fa-chevron-down"></i></span>
 				</a>
 			</div>
 		</section>
@@ -651,21 +651,7 @@
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="js/jquery.style.switcher.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
+
 	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
@@ -677,26 +663,6 @@
 	The code below is to toggle the layout to boxed or wide
 	-->
 	<script src="js/jquery.cookie.js"></script>
-	<script>
-		$(function(){
-
-			if ( $.cookie('layoutCookie') != '' ) {
-				$('body').addClass($.cookie('layoutCookie'));
-			}
-
-			$('a[data-layout="boxed"]').click(function(event){
-				event.preventDefault();
-				$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
-				$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
-			});
-
-			$('a[data-layout="wide"]').click(function(event){
-				event.preventDefault();
-				$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
-				$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
-			});
-		});
-	</script>
 
 
 	</body>
